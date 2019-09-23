@@ -13,3 +13,22 @@ c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\Simp
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.exe
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.pdb
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.FrmUpdateItem.resources
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\Simple_ CRUD_WithMySql.exe.config
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\Simple_ CRUD_WithMySql.exe
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\Simple_ CRUD_WithMySql.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\PORTAL.DAL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\PORTAL.MODEL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\MySql.Data.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\Google.Protobuf.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\PORTAL.DAL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\PORTAL.MODEL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\MySql.Data.xml
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csprojAssemblyReference.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.Form1.resources
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.FrmUpdateItem.resources
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.Properties.Resources.resources
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csproj.GenerateResource.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csproj.CoreCompileInputs.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csproj.CopyComplete
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.exe
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.pdb
