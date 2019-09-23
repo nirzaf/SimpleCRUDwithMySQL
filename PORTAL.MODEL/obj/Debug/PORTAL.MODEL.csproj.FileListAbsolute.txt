@@ -2,3 +2,9 @@ c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORT
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.MODEL\bin\Debug\PORTAL.MODEL.pdb
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.dll
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\bin\Debug\PORTAL.MODEL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\bin\Debug\PORTAL.MODEL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.csprojAssemblyReference.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.MODEL\obj\Debug\PORTAL.MODEL.pdb

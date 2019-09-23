@@ -4,3 +4,13 @@ c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORT
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.DAL\obj\Debug\PORTAL.DAL.csprojResolveAssemblyReference.cache
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.DAL\obj\Debug\PORTAL.DAL.dll
 c:\users\shali\documents\visual studio 2015\Projects\Simple_ CRUD_WithMySql\PORTAL.DAL\obj\Debug\PORTAL.DAL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\bin\Debug\PORTAL.DAL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\bin\Debug\PORTAL.DAL.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\bin\Debug\MySql.Data.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\bin\Debug\Google.Protobuf.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\bin\Debug\MySql.Data.xml
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\obj\Debug\PORTAL.DAL.csprojAssemblyReference.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\obj\Debug\PORTAL.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\obj\Debug\PORTAL.DAL.csproj.CopyComplete
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\obj\Debug\PORTAL.DAL.dll
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\PORTAL.DAL\obj\Debug\PORTAL.DAL.pdb
