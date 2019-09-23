@@ -1,13 +1,7 @@
 ﻿using PORTAL.DAL;
 using PORTAL.MODEL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Simple__CRUD_WithMySql
@@ -24,23 +18,22 @@ namespace Simple__CRUD_WithMySql
             //clear data grid view
             dgvItems.Rows.Clear();
 
-            DataSet ds = new DataSet();
+                DataSet ds = new DataSet();
+                MySQLconnection con = new MySQLconnection(); //create connection
 
-            MySQLconnection con = new MySQLconnection(); //create connection
+                //create sql query for get data
+                string sqlQuery = "SELECT * FROM items";
 
-            //create sql query for get data
-            string sqlQuery = "SELECT * FROM items";
-
-            //Executing
-            ds = con.LoadData(sqlQuery);
+                //Executing
+                ds = con.LoadData(sqlQuery);
 
             //check if data data is available
-            if(ds.Tables[0].Rows.Count == 0)
+            if (ds.Tables[0].Rows.Count == 0)
             {
                 return;
             }
 
-            for(int n = 0; n < ds.Tables[0].Rows.Count; n++) //loopping through add data to dgv
+            for (int n = 0; n < ds.Tables[0].Rows.Count; n++) //loopping through add data to dgv
             {
                 itemBindingSource.Add(new item
                 {
@@ -50,8 +43,6 @@ namespace Simple__CRUD_WithMySql
                     isActive = Convert.ToBoolean(Convert.ToInt32(ds.Tables[0].Rows[n]["isActive"].ToString()))
                 });
             }
-
-            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -109,17 +100,20 @@ namespace Simple__CRUD_WithMySql
         private void redirectToUpdateForm(int row)
         {
             //create item object
-            item Item = new item();
-
-            //set data
-            Item.ID = dgvItems.Rows[row].Cells[0].Value.ToString();
-            Item.ProductName = dgvItems.Rows[row].Cells[1].Value.ToString();
-            Item.Price = Convert.ToDouble(dgvItems.Rows[row].Cells[2].Value.ToString());
-            Item.isActive = (bool)dgvItems.Rows[row].Cells[3].Value;
+            item Item = new item
+            {
+                //set data
+                ID = dgvItems.Rows[row].Cells[0].Value.ToString(),
+                ProductName = dgvItems.Rows[row].Cells[1].Value.ToString(),
+                Price = Convert.ToDouble(dgvItems.Rows[row].Cells[2].Value.ToString()),
+                isActive = (bool)dgvItems.Rows[row].Cells[3].Value
+            };
 
             //show form
-            Form frm = new FrmUpdateItem(Item);
-            frm.ShowDialog();
+            using (Form frm = new FrmUpdateItem(Item))
+            {
+                frm.ShowDialog();
+            }
 
             //load gridview
             loadTable();
@@ -128,12 +122,9 @@ namespace Simple__CRUD_WithMySql
         private void deleteData(int row)
         {
             string ID = dgvItems.Rows[row].Cells[0].Value.ToString();
-
             string sqlQuery = "DELETE FROM items WHERE ID = '" + ID + "';";
-
             MySQLconnection con = new MySQLconnection();
             con.Executing(sqlQuery);
-
             //Load Table
             loadTable();
         }

@@ -24,7 +24,6 @@ C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debu
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\PORTAL.MODEL.pdb
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\bin\Debug\MySql.Data.xml
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csprojAssemblyReference.cache
-C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.Form1.resources
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.FrmUpdateItem.resources
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.Properties.Resources.resources
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csproj.GenerateResource.cache

@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PORTAL.DAL
 {
@@ -15,10 +12,15 @@ namespace PORTAL.DAL
 
         public MySqlConnection CreateConnection() //create mysql connection
         {
-            string connectionString = ConfigurationManager.AppSettings["AppConnection"];
-            connection = new MySqlConnection(connectionString);
-
-            return connection;
+            try
+            {
+                string connectionString = ConfigurationManager.AppSettings["AppConnection"];
+                connection = new MySqlConnection(connectionString);
+                return connection;
+            } catch (MySqlException ex)
+            {
+                throw ex;
+            }
         }
 
         private bool OpenConnection() //connect open
@@ -26,7 +28,7 @@ namespace PORTAL.DAL
             try
             {
                 connection = CreateConnection();
-                connection.Open();
+                if(connection.State == ConnectionState.Closed) connection.Open();
                 return true;
             }
             catch (MySqlException ex)
@@ -39,7 +41,7 @@ namespace PORTAL.DAL
         {
             try
             {
-                connection.Close();
+                if (connection.State == ConnectionState.Open) connection.Close();
                 return true;
             }
             catch (MySqlException ex)
@@ -50,24 +52,24 @@ namespace PORTAL.DAL
 
         public void Executing(string query) //execute sql query
         {
-
             try
             {
                 if (OpenConnection())
                 {
                     //create command and assign the query and connection from the constructor
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                    //Execute command
-                    cmd.ExecuteNonQuery();
-
-                    //close connection
-                    CloseConnection();
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                CloseConnection();
             }
         }
 
@@ -78,22 +80,25 @@ namespace PORTAL.DAL
                 DataSet ds = new DataSet();
                 if (OpenConnection())
                 {
-
-                    MySqlCommand cmd = new MySqlCommand(Query, connection);
-                    cmd.CommandType = CommandType.Text;
-
-                    using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                    using (MySqlCommand cmd = new MySqlCommand(Query, connection))
                     {
-                        sda.Fill(ds);
-                    }
+                        cmd.CommandType = CommandType.Text;
 
-                    CloseConnection();
+                        using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                        {
+                            sda.Fill(ds);
+                        }
+                    }
                 }
                 return ds;
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                CloseConnection();
             }
         }
 
@@ -110,10 +115,7 @@ namespace PORTAL.DAL
 
                         foreach (KeyValuePair<string, string> item in Params)
                         {
-                            //Console.WriteLine("Key: {0}, Value: {1}", item.Key, item.Value);
                             cmd.Parameters.AddWithValue("@" + item.Key, item.Value);
-
-
                         }
                         using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
                         {
@@ -121,16 +123,17 @@ namespace PORTAL.DAL
                             sda.Fill(ds);
                         }
                     }
-                    CloseConnection(); //close connection
                 }
-
                 return ds;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
+            finally
+            {
+                CloseConnection();
+            }
         }
     }
 }
