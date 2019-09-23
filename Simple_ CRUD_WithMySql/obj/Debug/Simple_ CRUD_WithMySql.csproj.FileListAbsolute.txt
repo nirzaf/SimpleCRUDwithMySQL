@@ -32,3 +32,4 @@ C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debu
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.csproj.CopyComplete
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.exe
 C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple_ CRUD_WithMySql.pdb
+C:\Users\Nirzaf\Source\Repos\SimpleCRUDwithMySQL\Simple_ CRUD_WithMySql\obj\Debug\Simple__CRUD_WithMySql.Main.resources
